@@ -1,0 +1,37 @@
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 110
+
+Metrics/MethodLength:
+  Max: 10
+
+Metrics/ModuleLength:
+  Max: 600
+
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - 'Gemfile.lock'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'log/**/*'
+    - 'lib/templates/**/*'
+    - 'config/initializers/**/*'
+#
+#
+
+#
+# Rails/HasAndBelongsToMany:
+#   Enabled: false
+#
+# Lint/UnusedMethodArgument:
+#   Exclude:
+#     - 'app/indicators/*'
+#
+# Style/ClassAndModuleChildren:
+#   Exclude:
+#     - 'app/controllers/client/**/*'
