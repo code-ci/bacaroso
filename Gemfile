@@ -45,4 +45,5 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'rubocop', require: false
+  gem 'coveralls', require: false
 end
