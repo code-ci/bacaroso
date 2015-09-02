@@ -1,6 +1,10 @@
 language: ruby
 rvm:
 - 2.2.1
+
+after_success:
+- CI=true TRAVIS=true coveralls --verbose
+
 notifications:
   email:
   - programmer.rrn@gmail.com
