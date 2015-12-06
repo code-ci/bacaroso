@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150901220109) do
+ActiveRecord::Schema.define(version: 20151206191133) do
 
   create_table "countries", force: :cascade do |t|
     t.string   "name"
     t.string   "code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "countries", ["code"], name: "index_countries_on_code"
+
+  create_table "states", force: :cascade do |t|
+    t.string   "name"
+    t.string   "acronym"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
